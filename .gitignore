@@ -1,0 +1,14 @@
+# Ignore data files
+data/raw/*
+data/processed/*
+
+# Ignore environment variables and credentials
+.env
+backend/app/core/security.py (if it contains keys)
+
+# Ignore logs
+logs/*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
