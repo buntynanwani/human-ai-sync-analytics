@@ -33,3 +33,4 @@ def test_db_connection(db: Session = Depends(get_db)):
         return {"status": "success", "message": "Database connection is active"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Database connection failed: {str(e)}")
+
